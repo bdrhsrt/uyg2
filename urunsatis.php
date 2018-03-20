@@ -11,9 +11,13 @@
 			while (!feof($dosya))
 			{
 				
+		$kaynak=fgts($dosya,256);
 				
+		$kaynak=trim($kaynak);
 				
-				
+		$dizi=explode("-"$kaynak);
+		echo"<option>".$dizi[0];
+			}
 				
 				
 			}
